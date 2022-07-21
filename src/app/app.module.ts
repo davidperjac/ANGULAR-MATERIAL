@@ -5,10 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { SplashComponent } from './splash/splash.component';
+import { PrincipalComponent } from './principal/principal.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SplashComponent,
+    PrincipalComponent
   ],
   imports: [
     BrowserModule,
