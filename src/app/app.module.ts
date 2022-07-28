@@ -5,17 +5,26 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+
 import { SplashComponent } from './splash/splash.component';
 import { PrincipalComponent } from './principal/principal.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AlbumComponent } from './album/album.component';
 
-import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatGridListModule } from '@angular/material/grid-list';
 import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
+
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
-  declarations: [AppComponent, SplashComponent, PrincipalComponent],
+  declarations: [
+    AppComponent,
+    SplashComponent,
+    PrincipalComponent,
+    AlbumComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -27,9 +36,10 @@ import { MatCardModule } from '@angular/material/card';
     }),
     BrowserAnimationsModule,
     MatToolbarModule,
+    MatCardModule,
+    MatGridListModule,
     MatIconModule,
     MatButtonModule,
-    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
